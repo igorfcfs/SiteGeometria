@@ -1,12 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
 header {
-    background-color: #333;
     color: #fff;
 }
 
@@ -15,12 +19,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 
 .navbar .logo {
     font-size: 1.5rem;
     color: #fff;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 .nav-links {
@@ -32,26 +39,56 @@ header {
 
 .nav-links li {
     margin-left: 1rem;
+    margin-right: 2rem;
 }
 
 .nav-links a {
     color: #000;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    transition: .2s;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: #A149F8;
+    transform: scaleX(1.1);
 }
 
-main {
-    padding: 2rem;
+.navbar a.active {
+    color: #A149F8;
 }
 
-.content {
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-content {
     display: inline-block;
     justify-content: space-between;
     align-items: flex-start;
+    margin-left: 60px;
+}
+
+.home-content h1 { 
+    margin-top: 168px;
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.home-content p {
+    margin-top: 75px;
+    font-size: 25px;
+}
+
+.home-content button {
+    margin-top: 75px;
+    justify-content: center;
+}
+
+.home img { 
+    margin-right: 40px;
 }
 
 .text-content {
@@ -75,7 +112,75 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
+
+/* From Uiverse.io by adamgiebl */ 
+.home_button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #6E8EFF, #9C61D6);
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+.home_button:active {
+    transform: scale(0.9);
+}
+
+/* From Uiverse.io by mobinkakei */ 
+.btn {
+    width: 140px;
+    height: 50px;
+    background: linear-gradient(to top, #00154c, #12376e, #23487f);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .btn span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+  }
+  
+  .btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn:hover .btn-text-one {
+    top: -100%;
+  }
+  
+  .btn:hover .btn-text-two {
+    top: 50%;
+  }
+  
