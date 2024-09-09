@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,30 +18,116 @@
     <header>
         <nav>
             <div class="navbar">
-                <img src="./assets/logo.png" class="logo">
+                <img src="./assets/logo.png" class="logo" alt="Logo">
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="origem.html">Origem</a></li>
-                    <li><a href="conceitos.html" class="active">Conceitos</a></li>
-                    <li><a href="aplicacoes.html">Aplicações</a></li>
-                    <li><a href="exercicios.html">Exercícios</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./origem.html">Origem</a></li>
+                    <li><a href="#conceitos" class="active">Conceitos</a></li>
+                    <li><a href="./aplicacoes.html">Aplicações</a></li>
+                    <li><a href="./aulas.html">Exercícios</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <section class="home">
-        <div class="home-content">
-            <h1>Geometria</h1>
-            <p>A geometria é uma das áreas mais antigas da matemática, dedicada ao estudo das formas, tamanhos e
-                propriedades do espaço e das figuras.</p>
-            <button class="btn">
-                <span class="btn-text-one">Saiba mais</span>
-                <span class="btn-text-two">Vamos lá!</span>
-            </button>
-        </div>
-        <img src="./assets/tales.png" alt="Imagem de Geometria">
-    </section>
+    <div id="conceitos">
+        <section class="section">
+            <div class="section-content">
+                <h1>Divisões da Geometria</h1>
+                <p>Atualmente a geometria é dividida em dois conjuntos: Geometria Euclidiana e Geometrias não Euclidianas.</p>
+                
+                <h3>Geometrias não Euclidianas</h3>
+                <p>Euclides, grande matemático e escritor, viveu provavelmente no século III a.C. e é chamado de pai da geometria. Ele foi o primeiro a reunir toda a geometria em uma única obra, chamada “Os Elementos”. Esse matemático baseou a geometria plana em cinco postulados.</p>
+                <p>O quinto desses postulados é muito mais sofisticado que os outros quatro. Isso levantou dúvidas entre os matemáticos, desde sua época até meados do século XIX, quando Lobachevsky, um matemático russo, resolveu reconstruir a geometria, mas utilizando a negação do quinto postulado de Euclides.</p>
+                <p>Esse postulado afirmava: Por um ponto fora de uma reta passa uma única reta paralela à reta dada. Lobachevsky considerou o contrário: Por um ponto fora de uma reta passa mais de uma reta paralela à reta dada.</p>
+                <p>Os objetos e figuras geométricas são definidos da mesma forma que na geometria plana, a única diferença é realmente o quinto postulado.</p>
+                <p>Os resultados obtidos por Lobachevsky são divididos da seguinte forma: aqueles que não dependem do quinto axioma de Euclides são idênticos à geometria tradicional. Já os que dependem são diferentes. Por exemplo, a soma dos ângulos internos de um triângulo, nas geometrias construídas a partir de Lobachevsky, não é igual a 180°.</p>
+                <p>Os estudos de Lobachevsky deram origem à geometria Riemanniana e abriram uma porta para a construção de outras geometrias completamente distintas da geometria plana e espacial que conhecemos. O fato mais interessante é que os seus resultados possuem muitas aplicações no dia a dia.</p>
+                <img src="./assets/euclides.png" alt="Euclides">
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-content">
+                <h3>Geometria Euclidiana</h3>
+                <p>É a geometria discutida nos ensinos fundamental e médio e a única geometria conhecida pelo homem até meados do século XIX. A geometria Euclidiana é dividida nas seguintes subáreas:</p>
+
+                <h4>Geometria Plana</h4>
+                <p>Todas as figuras, formas e definições são feitas para objetos pertencentes ao plano, isto é, que possuem apenas largura e comprimento, mas não possuem profundidade.</p>
+                <p>Os conceitos discutidos pela geometria plana são de ponto, reta, plano, posições relativas, distância entre dois pontos, ângulos, polígonos, áreas e trigonometria, entre outros.</p>
+
+                <h4>Geometria Espacial</h4>
+                <p>Os objetos pertencem ao espaço tridimensional, ou seja, agora existe a possibilidade de considerar a sua profundidade.</p>
+                <p>Os conceitos discutidos na geometria espacial são: todos os da geometria plana, além de planos, poliedros e corpos redondos.</p>
+
+                <h4>Geometria Analítica</h4>
+                <p>Subárea que relaciona a geometria com a álgebra e utiliza uma para resolver problemas provenientes da outra.</p>
+                <p>Os conceitos discutidos na geometria analítica são: todos os conceitos e definições da geometria plana e espacial do ponto de vista algébrico, coordenadas, vetores, matrizes, quádricas e sólidos de revolução, entre outros.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-content">
+                <h3>Estudiosos da Área</h3>
+                <p>Aqueles que se preocupam em estudar sobre a geometria, suas aplicações e benefícios são matemáticos conhecidos como geômetras. Vale dizer ainda que a geometria teve início na Grécia Antiga e que alguns dos estudiosos importantes que contribuíram para ela foram: René Descartes, Tales de Mileto, Euclides, Arquimedes, etc.</p>
+                <p>A seguir há um pouco sobre as descobertas que alguns desses estudiosos fizeram para a área:</p>
+                <ul>
+                    <li>O físico e matemático René Descartes foi o responsável por desenvolver o sistema de coordenadas.</li>
+                    <li>A geometria analítica, que mesclou a geometria com a álgebra, sendo essa também uma contribuição de Descartes.</li>
+                    <li>Euclides de Alexandria, que contribuiu com a geometria euclidiana.</li>
+                    <li>O aproximar do valor numérico do número pi, que foi algo de Arquimedes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-content">
+                <h3>A Essencialidade da Geometria</h3>
+                <p>A princípio, o foco com o estudo da geometria era compreender o mundo físico, no qual os seres estão inseridos, e isso segue até os dias de hoje.</p>
+                <p>Cabe ainda dizer que há muitas áreas de estudo e mesmo profissões que dependem da geometria, tais como: a área da construção, que necessita de uma compreensão sólida de área, dimensões, comprimentos, ângulos e outros parâmetros da geometria. O engenheiro precisa ter conhecimento e prática para a elaboração de projetos.</p>
+                <p>Mas além disso, os conhecimentos em geometria são essenciais também nas ciências naturais, onde, por exemplo, na área da física, raciocínio geométrico e computação se fazem cruciais para resolver muitos problemas.</p>
+                <p>Há uma vasta aplicação para a geometria, sendo que muitas profissões necessitam do conhecimento dela, por exemplo: ela é importante para a engenharia, como dito, também para a arquitetura, para os trabalhos de um artista plástico, de um coreógrafo, na área da astronomia, entre outros.</p>
+                <p>Concluímos então que o estudo da geometria se inicia com várias suposições sobre o espaço em que certas figuras se localizam, depois passa-se a tirar conclusões sobre tais figuras.</p>
+                <p>Sem a geometria a civilização tal como se conhece não existiria, posto que muitos elementos são desenvolvidos com a ajuda dela: um livro, um aparelho celular, a janela de uma casa, tudo isso tem alguma relação com figuras da geometria.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-content">
+                <h3>Conceitos da Geometria</h3>
+                <h4>Geometria Plana</h4>
+                <ul>
+                    <li><strong>Ponto:</strong> Algo que não possui partes nem dimensões.</li>
+                    <li><strong>Reta:</strong> Formada por pontos reunidos formando uma linha, sem largura e com comprimento. A reta é infinita para os dois sentidos.</li>
+                    <li><strong>Plano:</strong> Superfície bidimensional que se estende indefinidamente.</li>
+                    <li><strong>Segmento de Reta:</strong> Parte de uma reta limitada por dois pontos.</li>
+                    <li><strong>Semirreta:</strong> Parte de uma reta que começa em um ponto e se estende infinitamente em uma direção.</li>
+                    <li><strong>Ângulos:</strong> Formados por duas semirretas que têm a mesma origem.</li>
+                    <li><strong>Área:</strong> Medida da superfície de uma figura.</li>
+                    <li><strong>Perímetro:</strong> Soma das medidas dos lados de uma figura.</li>
+                </ul>
+
+                <h4>Geometria Analítica</h4>
+                <h5>Distância entre Dois Pontos</h5>
+                <p>A distância entre os pontos A (xa, ya) e B (xb, yb) é definida pelo segmento de reta AB, que vamos denotar dAB. Veja como obter o tamanho desse segmento, ou seja, a distância.</p>
+                <p>Note que a distância entre os pontos A e B é a hipotenusa do triângulo, logo, para determiná-la, vamos utilizar o teorema de Pitágoras.</p>
+
+                <h5>Coordenadas do Ponto Médio</h5>
+                <p>Na geometria plana, o ponto médio é o ponto que divide o segmento de reta AB ao meio, ou seja, em duas partes iguais. Na geometria analítica, as coordenadas do ponto médio são dadas por:</p>
+                <p>A coordenada do ponto médio, ou seja, do ponto M, é dada por:</p>
+                <p>M(xm, ym) = ((xa + xb)/2, (ya + yb)/2)</p>
+
+                <h5>Condição de Alinhamento de Três Pontos</h5>
+                <p>Considere três pontos — A (xa, ya), B (xb, yb) e C (xc, yc) — distintos no plano. Diremos que os pontos são colineares se o determinante abaixo for igual a zero. Podemos dizer também que eles são colineares se existir uma reta que os contenha.</p>
+
+                <h4>Geometria Espacial</h4>
+                <p><strong>Ponto:</strong> Objeto que não possui dimensão e forma, portanto, não pode ser medido.</p>
+                <p><strong>Reta:</strong> Conjunto de infinitos pontos alinhados, que tem dimensão, e é classificada como objeto unidimensional.</p>
+                <p><strong>Plano:</strong> Conjunto de retas dispostas lado a lado, de modo que não haja espaços entre essas retas, e que ele também seja infinito, sendo classificado como objeto bidimensional.</p>
+                <p><strong>Espaço:</strong> Extensão tridimensional dos eixos cartesianos que permite a análise e a descrição de formas, objetos e suas relações geométricas.</p>
+            </div>
+        </section>
+    </div>
 
     <!--<footer>
         <p>&copy; 2024 Geometria. Todos os direitos reservados.</p>

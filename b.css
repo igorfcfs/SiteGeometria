@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-size: 1rem; /* 16px como base para rem */
+    font-size: 16px; /* Tamanho base para rem */
 }
 
 /* Header */
@@ -20,21 +20,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem; /* 16px */
+    padding: 1rem;
     background-color: transparent;
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    box-shadow: 0 0.0625rem 0.3125rem rgba(0,0,0,0.1); /* 1px 5px */
+    box-shadow: 0 0.0625rem 0.3125rem rgba(0,0,0,0.1); /* Adicionado para visibilidade */
+    z-index: 1000; /* Garante que a navbar fique acima do conteúdo */
 }
 
 .navbar .logo {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
     color: #fff;
     text-decoration: none;
-    margin-left: 1rem; /* 16px */
+    margin-left: 1rem;
 }
 
 .nav-links {
@@ -45,13 +46,13 @@ header {
 }
 
 .nav-links li {
-    margin-left: 1rem; /* 16px */
+    margin-left: 1rem;
 }
 
 .nav-links a {
     color: #000;
     text-decoration: none;
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
     transition: color 0.2s, transform 0.2s;
 }
 
@@ -66,81 +67,61 @@ header {
 
 /* Section */
 .section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 2rem; /* 32px */
+    padding: 4rem 2rem 2rem; /* Adiciona padding superior suficiente para evitar a sobreposição */
+    flex-direction: column;
     box-sizing: border-box;
+    position: relative;
+    margin-top: 4rem; /* Espaço para a navbar */
 }
 
 .section-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 2rem; /* 32px */
+    max-width: 50rem; /* Limitar a largura máxima do conteúdo */
+    width: 100%;
+    margin: 0 auto; /* Centralizar o conteúdo */
+    padding: 1rem; /* Adiciona padding ao conteúdo */
 }
 
 .section-content h1 { 
-    margin-top: 2rem; /* 32px */
-    font-size: 4rem; /* 64px */
+    margin-top: 2rem;
+    font-size: 2.5rem; /* Ajustado para rem */
     font-weight: 700;
+    line-height: 1.2; /* Melhora a legibilidade */
+    text-align: center; /* Centraliza o título */
 }
 
 .section-content p {
-    margin-top: 1rem; /* 16px */
-    font-size: 1.5rem; /* 24px */
+    margin-top: 1rem;
+    font-size: 1rem; /* Ajustado para rem */
+    line-height: 1.6; /* Melhora a legibilidade */
 }
 
-.section-content button {
-    margin-top: 1rem; /* 16px */
-    font-size: 1rem; /* 16px */
-}
-
-.section img { 
-    margin-right: 2rem; /* 32px */
-}
-
-.text-content {
-    flex: 1;
-    margin-right: 2rem; /* 32px */
-}
-
-.image-content {
-    flex: 1;
-}
-
-.image-content img {
+.section-content img {
     width: 100%;
-    max-width: 100%;
+    max-width: 37.5rem; /* Ajustado para rem */
     height: auto;
-    border: 0.0625rem solid #ccc; /* 1px */
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem; /* 16px */
-    width: 100%;
+    display: block;
+    margin: 2rem auto; /* Adiciona margem superior e inferior */
 }
 
 /* Botão de seção */
 .section_button {
     position: relative;
     display: inline-block;
-    margin: 1rem; /* 16px */
-    padding: 1rem 2rem; /* 16px 32px */
+    margin: 1rem;
+    padding: 1rem 2rem;
     text-align: center;
-    font-size: 1rem; /* 16px */
-    letter-spacing: 0.0625rem; /* 1px */
+    font-size: 1rem;
+    letter-spacing: 0.0625rem; /* Ajustado para rem */
     text-decoration: none;
     color: #fff;
     background: linear-gradient(to right, #6E8EFF, #9C61D6);
     cursor: pointer;
     transition: ease-out 0.5s;
     border: none;
-    border-radius: 0.625rem; /* 10px */
+    border-radius: 0.625rem; /* Ajustado para rem */
 }
 
 .section_button:active {
@@ -149,23 +130,23 @@ footer {
 
 /* Botão geral */
 .btn {
-    width: 8.75rem; /* 140px */
-    height: 3.125rem; /* 50px */
+    width: 8.75rem; /* Ajustado para rem */
+    height: 3.125rem; /* Ajustado para rem */
     background: linear-gradient(to top, #00154c, #12376e, #23487f);
     color: #fff;
-    border-radius: 1.5625rem; /* 25px */
+    border-radius: 3.125rem; /* Ajustado para rem */
     border: none;
     outline: none;
     cursor: pointer;
     position: relative;
-    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.5); /* 15px 30px */
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.5);
     overflow: hidden;
 }
 
 .btn span {
-    font-size: 0.75rem; /* 12px */
+    font-size: 0.75rem; /* Ajustado para rem */
     text-transform: uppercase;
-    letter-spacing: 0.0625rem; /* 1px */
+    letter-spacing: 0.0625rem; /* Ajustado para rem */
     transition: top 0.5s;
 }
 
@@ -199,60 +180,61 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 48rem) { /* 768px */
+@media (max-width: 48rem) { /* Ajustado para rem */
     .navbar .logo {
         margin-right: 0;
     }
 
     .section-content {
-        margin-left: 1rem; /* 16px */
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .section-content h1 {
-        font-size: 3rem; /* 48px */
+        font-size: 2rem;
     }
 
     .section-content p {
-        font-size: 1.2rem; /* 19.2px */
+        font-size: 0.9rem;
     }
 
     .section-content button {
-        font-size: 0.9rem; /* 14.4px */
+        font-size: 0.9rem;
     }
 
     .text-content {
-        margin-right: 1rem; /* 16px */
+        margin-right: 1rem;
     }
 
     .btn {
-        width: 7.5rem; /* 120px */
-        height: 2.8125rem; /* 45px */
+        width: 7.5rem;
+        height: 2.8125rem;
     }
 
     .btn span {
-        font-size: 0.7rem; /* 11.2px */
+        font-size: 0.7rem;
     }
 }
 
-@media (max-width: 30rem) { /* 480px */
+@media (max-width: 30rem) { /* Ajustado para rem */
     .section-content h1 {
-        font-size: 2rem; /* 32px */
+        font-size: 1.5rem;
     }
 
     .section-content p {
-        font-size: 1rem; /* 16px */
+        font-size: 0.8rem;
     }
 
     .section-content button {
-        font-size: 0.8rem; /* 12.8px */
+        font-size: 0.8rem;
     }
 
     .btn {
-        width: 6.25rem; /* 100px */
-        height: 2.5rem; /* 40px */
+        width: 6.25rem;
+        height: 2.5rem;
     }
 
     .btn span {
-        font-size: 0.6rem; /* 9.6px */
+        font-size: 0.6rem;
     }
 }

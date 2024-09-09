@@ -28,6 +28,7 @@ header {
     top: 0;
     left: 0;
     box-shadow: 0 0.0625rem 0.3125rem rgba(0,0,0,0.1); /* 1px 5px */
+    z-index: 1000; /* Adiciona um índice z para sobrepor outros elementos */
 }
 
 .navbar .logo {
@@ -66,54 +67,41 @@ header {
 
 /* Section */
 .section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 2rem; /* 32px */
+    padding: 6rem 2rem 2rem; /* Adiciona espaçamento superior suficiente para o header e padding lateral */
     box-sizing: border-box;
+    background-color: #f9f9f9; /* Cor de fundo opcional */
 }
 
 .section-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
     align-items: flex-start;
-    margin-left: 2rem; /* 32px */
+    gap: 2rem; /* Espaço entre o título e o conteúdo */
 }
 
 .section-content h1 { 
-    margin-top: 2rem; /* 32px */
+    margin-top: 0; /* Remove a margem superior para evitar sobreposição com o conteúdo */
     font-size: 4rem; /* 64px */
     font-weight: 700;
 }
 
 .section-content p {
-    margin-top: 1rem; /* 16px */
     font-size: 1.5rem; /* 24px */
 }
 
 .section-content button {
-    margin-top: 1rem; /* 16px */
     font-size: 1rem; /* 16px */
 }
 
 .section img { 
-    margin-right: 2rem; /* 32px */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-.text-content {
-    flex: 1;
-    margin-right: 2rem; /* 32px */
-}
-
-.image-content {
-    flex: 1;
-}
-
+/* Ajusta a imagem para não ocupar muito espaço em telas menores */
 .image-content img {
-    width: 100%;
     max-width: 100%;
     height: auto;
-    border: 0.0625rem solid #ccc; /* 1px */
 }
 
 /* Footer */
@@ -200,12 +188,10 @@ footer {
 
 /* Media Queries */
 @media (max-width: 48rem) { /* 768px */
-    .navbar .logo {
-        margin-right: 0;
-    }
-
     .section-content {
-        margin-left: 1rem; /* 16px */
+        flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+        align-items: center;
+        text-align: center;
     }
 
     .section-content h1 {
@@ -218,10 +204,6 @@ footer {
 
     .section-content button {
         font-size: 0.9rem; /* 14.4px */
-    }
-
-    .text-content {
-        margin-right: 1rem; /* 16px */
     }
 
     .btn {
