@@ -1,6 +1,7 @@
 /* Normalização de box-sizing */
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 /* Header */
 header {
     color: #fff;
+    margin: 100px;
 }
 
 .navbar {
@@ -259,12 +261,22 @@ footer {
 
 .aulas {
     display: flex;
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte */
     justify-content: space-between; /* Alinha os cards horizontalmente com espaço entre eles */
+    gap: 20px; /* Espaço entre os cards */
 }
-  
+
 .card {
-    border: 1px solid black;
-    padding: 5px;
-    width: 45%; /* Cada card ocupará 45% da largura disponível */
-    margin: 5%;
+    border: 1px solid black; /* Adiciona borda ao card */
+    padding: 10px; /* Adiciona padding interno ao card */
+    width: calc(50% - 20px); /* Ajusta a largura dos cards */
+    margin: 10px; /* Adiciona margem ao redor dos cards */
+    background-color: #fff; /* Fundo branco para os cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao card */
+}
+
+iframe {
+    width: 100%; /* Faz com que o iframe ocupe toda a largura do card */
+    height: 315px; /* Define uma altura fixa para o iframe */
+    border: none; /* Remove a borda do iframe */
 }

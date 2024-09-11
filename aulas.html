@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,9 @@
     <header>
         <nav>
             <div class="navbar">
-                <img src="./assets/logo.png" class="logo">
+                <img src="./assets/logo.png" class="logo" alt="Geometria Logo">
                 <ul class="nav-links">
-                    <li><a href="./index.html">Home</li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="./origem.html">Origem</a></li>
                     <li><a href="./conceitos.html">Conceitos</a></li>
                     <li><a href="./aplicacoes.html">Aplicações</a></li>
@@ -30,24 +30,20 @@
         </nav>
     </header>
 
-    <div id="aulas">
-        <div class="card">
-            <video controls>
-                <source src="meu-video.mp4" type="video/mp4">
-                Seu navegador não suporta este formato de vídeo.
-            </video>
-            <h2>Geometria Plana - Exercícios</h2>
-            <p>Resolução de exercícios de geometria plana para vestibular</p>
+    <main>
+        <div id="aulas" class="aulas">
+            <div class="card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/afvfgbDocog" title="Geometria Plana - Exercícios" frameborder="0" allowfullscreen></iframe>
+                <h2>Geometria Plana - Exercícios</h2>
+                <p>Resolução de exercícios de geometria plana para vestibular</p>
+            </div>
+            <div class="card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sf9oJ4jJdmQ" title="Geometria Espacial - Exercícios" frameborder="0" allowfullscreen></iframe>
+                <h2>Geometria Espacial - Exercícios</h2>
+                <p>Resolução de exercícios de geometria espacial para vestibular</p>
+            </div>
         </div>
-        <div class="card">
-            <video controls>
-                <source src="meu-video.mp4" type="video/mp4">
-                Seu navegador não suporta este formato de vídeo.
-            </video>
-            <h2>Geometria Espacial - Exercícios</h2>
-            <p>Resolução de exercícios de geometria espacial para vestibular</p>
-        </div>
-    </div>
+    </main>
 
     <!--<footer>
         <p>&copy; 2024 Geometria. Todos os direitos reservados.</p>
